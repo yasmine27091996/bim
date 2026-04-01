@@ -38,6 +38,10 @@
   --shadow:   0 2px 16px rgba(90,60,20,0.10);
   --shadow-lg:0 8px 40px rgba(90,60,20,0.14);
   --r:        4px;
+  /* Vert sauge — stats hero */
+  --sage:     #94A68A;
+  --sage-dk:  #829C79;
+  --sage-lt:  rgba(148,166,138,0.22);
 }
 
 /* ─── RESET ──────────────────────────────────────────── */
@@ -209,18 +213,18 @@ nav.site-nav{
 .stats-bar{
   display:flex;gap:3.5rem;flex-wrap:wrap;
   margin-top:2.8rem;padding-top:2.2rem;
-  border-top:1px solid var(--divider);
+  border-top:1px solid var(--sage-lt);
 }
 .stat-num{
   font-family:'Cormorant Garamond',serif;
-  font-size:2.2rem;font-weight:300;
-  color:var(--amber2);line-height:1;
+  font-size:2.55rem;font-weight:300;
+  color:var(--sage);line-height:1;
 }
 .stat-label{
   font-family:'JetBrains Mono',monospace;
-  font-size:0.52rem;letter-spacing:0.14em;
-  color:var(--muted);text-transform:uppercase;
-  margin-top:0.25rem;
+  font-size:0.58rem;letter-spacing:0.14em;
+  color:var(--sage-dk);text-transform:uppercase;
+  margin-top:0.3rem;
 }
 
 /* photo */
@@ -334,13 +338,13 @@ section{position:relative;z-index:1;}
 }
 .tl-date{
   font-family:'JetBrains Mono',monospace;
-  font-size:0.6rem;letter-spacing:0.14em;
-  color:var(--amber);margin-bottom:0.25rem;
+  font-size:0.7rem;letter-spacing:0.14em;
+  color:var(--amber);margin-bottom:0.28rem;
 }
 .tl-company{
   font-family:'JetBrains Mono',monospace;
-  font-size:0.62rem;letter-spacing:0.1em;
-  color:var(--muted);margin-bottom:0.4rem;
+  font-size:0.74rem;letter-spacing:0.1em;
+  color:var(--muted);margin-bottom:0.45rem;
 }
 .tl-role{
   font-family:'Cormorant Garamond',serif;
