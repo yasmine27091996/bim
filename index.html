@@ -8,7 +8,13 @@
 <meta property="og:title" content="Yasmine Ait Saadi — BIM Manager & pyRevit Developer"/>
 <meta property="og:description" content="BIM Manager et développeuse pyRevit — coordination BIM, automatisation Revit, efficacité énergétique (Île-de-France)."/>
 <meta property="og:type" content="website"/>
+<meta property="og:url" content="https://yasmine27091996.github.io/bim/"/>
 <meta name="twitter:card" content="summary"/>
+<link rel="canonical" href="https://yasmine27091996.github.io/bim/"/>
+<!--
+  URL publique GitHub Pages — utilisée pour le QR (cible : …/bim/#videos, pas #contact).
+-->
+<meta name="portfolio-url" content="https://yasmine27091996.github.io/bim/"/>
 <title>Yasmine Ait Saadi — BIM Manager & pyRevit Developer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -475,6 +481,25 @@ section{position:relative;z-index:1;}
   color:var(--muted);text-transform:uppercase;
   position:relative;z-index:1;
 }
+.video-embed-wrap{
+  width:100%;aspect-ratio:16/9;
+  position:relative;border-radius:var(--r);
+  overflow:hidden;border:1px solid var(--border);
+  background:#000;
+  box-shadow:var(--shadow);
+}
+.video-embed-wrap iframe{
+  position:absolute;inset:0;width:100%;height:100%;
+  border:0;
+}
+.video-youtube-link{
+  display:inline-flex;align-items:center;gap:0.35rem;
+  margin-top:0.75rem;
+  font-family:'JetBrains Mono',monospace;
+  font-size:0.58rem;letter-spacing:0.12em;
+  text-transform:uppercase;color:var(--amber);
+}
+.video-youtube-link:hover{color:var(--amber2);}
 
 /* ─── EDUCATION ──────────────────────────────────────── */
 #education{background:var(--bg);}
@@ -580,6 +605,32 @@ section{position:relative;z-index:1;}
 }
 .contact-link:hover{color:var(--amber);}
 .contact-link svg{flex-shrink:0;}
+.contact-side{
+  display:flex;flex-direction:column;align-items:flex-end;gap:2rem;
+}
+.contact-qr-block{
+  text-align:right;max-width:220px;
+}
+.contact-qr-label{
+  font-family:'JetBrains Mono',monospace;
+  font-size:0.52rem;letter-spacing:0.16em;
+  color:var(--amber);text-transform:uppercase;margin-bottom:0.65rem;
+}
+.contact-qr-block img{
+  display:block;width:180px;height:180px;border-radius:var(--r);
+  border:1px solid var(--border);background:var(--surface);
+  box-shadow:var(--shadow);
+}
+.contact-qr-url{
+  display:block;margin-top:0.65rem;word-break:break-all;
+  font-family:'JetBrains Mono',monospace;font-size:0.5rem;letter-spacing:0.04em;
+  color:var(--muted);line-height:1.45;max-width:220px;
+}
+.contact-qr-url:hover{color:var(--amber);}
+.contact-qr-hint{
+  margin-top:0.5rem;font-size:0.72rem;color:var(--muted);line-height:1.5;text-align:right;
+}
+.contact-qr-hint code{font-family:'JetBrains Mono',monospace;font-size:0.58rem;color:var(--ink2);}
 .footer-bar{
   max-width:1240px;margin:0 auto;
   padding:1.2rem 3rem max(2.2rem,env(safe-area-inset-bottom));
@@ -619,6 +670,9 @@ section{position:relative;z-index:1;}
   .edu-grid{grid-template-columns:1fr;}
   .about-grid{grid-template-columns:1fr;gap:3rem;}
   .contact-inner{flex-direction:column;}
+  .contact-side{align-items:flex-start;}
+  .contact-qr-block{text-align:left;}
+  .contact-qr-hint{text-align:left;}
   .contact-actions{align-items:flex-start;}
   .stats-bar{gap:2rem;}
   .videos-grid{grid-template-columns:1fr;}
@@ -671,8 +725,8 @@ section{position:relative;z-index:1;}
       <p class="hero-subtitle fade-up anim-3">// AREP · CESI Nanterre · Architecture &amp; Énergie</p>
       <p class="hero-desc fade-up anim-4">
         Architecte de formation et diplômée en efficacité énergétique,
-        je conçois des outils BIM sur mesure et coordonne des projets numériques complexes —
-        toujours avec curiosité, rigueur et engagement.
+        je suis animée par la volonté de concevoir autrement, apprendre, tester, améliorer…
+        toujours avec curiosité et engagement.
       </p>
       <div class="hero-cta fade-up anim-5">
         <a href="#videos" class="btn btn-solid">↓ Voir mes démos</a>
@@ -960,9 +1014,10 @@ section{position:relative;z-index:1;}
         <div class="tl-company">AREP</div>
         <div class="tl-role">Alternante BIM Manager<span class="badge-current">Actuel</span></div>
         <ul class="tl-bullets">
-          <li>Coordination et management BIM sur des projets d'infrastructure complexes</li>
-          <li>Développement de plugins pyRevit pour automatiser les workflows de modélisation</li>
-          <li>Gestion des maquettes numériques et audits qualité BIM</li>
+          <li>Coordination BIM sur des projets d'infrastructure ferroviaire (LNPC, CCR Alpes, Technicentre de Bordeaux)</li>
+          <li>Rédaction de conventions BIM et audit des maquettes pour le contrôle qualité des livrables</li>
+          <li>Développement de scripts pyRevit (plugin BIM TO BEM)</li>
+          <li>Formation Revit des équipes et simulation BIM 4D</li>
         </ul>
       </div>
 
@@ -983,7 +1038,6 @@ section{position:relative;z-index:1;}
         <ul class="tl-bullets">
           <li>Conception architecturale dans le respect des normes et réglementations</li>
           <li>Élaboration des plans d'exécution et des dessins techniques</li>
-          <li>Modélisation 3D et maquette numérique</li>
         </ul>
       </div>
 
@@ -1033,6 +1087,7 @@ section{position:relative;z-index:1;}
           <span class="skill-tag">Coordination BIM</span>
           <span class="skill-tag">Simulation 4D</span>
           <span class="skill-tag">Audit maquettes</span>
+          <span class="skill-tag">Psets &amp; mapping IFC</span>
         </div>
       </div>
 
@@ -1082,54 +1137,57 @@ section{position:relative;z-index:1;}
   <div class="section-inner">
     <div class="section-header">
       <span class="section-num">03</span>
-      <h2 class="section-title">Démos Plugins pyRevit</h2>
+      <h2 class="section-title">Démos BIM · Plugins &amp; 4D</h2>
       <div class="section-rule"></div>
     </div>
     <div class="videos-grid">
 
       <div class="video-card">
         <div class="video-label">Plugin · pyRevit</div>
-        <div class="video-title">Générateur de Familles Automatique</div>
-        <div class="video-desc">Création et paramétrage automatisé de familles Revit complexes pour les projets structures.</div>
-        <div class="video-placeholder">
-          <!--
-            ▶ Quand la vidéo est prête, remplacer tout ce bloc par :
-            <iframe width="100%" height="100%" style="position:absolute;inset:0;border:0;"
-              src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
-          -->
-          <div class="play-circle"></div>
-          <span class="video-soon">Démo · Bientôt disponible</span>
+        <div class="video-title">Ask Yasmine</div>
+        <div class="video-desc">Assistant pyRevit intégré à Revit pour interroger la maquette et accélérer le travail au quotidien.</div>
+        <div class="video-embed-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/AjhYgQrng4I"
+            title="Ask Yasmine — démonstration pyRevit"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </div>
+        <a href="https://youtu.be/AjhYgQrng4I" class="video-youtube-link" target="_blank" rel="noopener noreferrer">Ouvrir sur YouTube →</a>
       </div>
 
       <div class="video-card">
         <div class="video-label">Plugin · pyRevit</div>
-        <div class="video-title">Audit Qualité Maquette BIM</div>
-        <div class="video-desc">Vérification automatisée de la conformité des maquettes Revit selon les standards BIM du projet.</div>
-        <div class="video-placeholder">
-          <div class="play-circle"></div>
-          <span class="video-soon">Démo · Bientôt disponible</span>
+        <div class="video-title">BIM TO BEM</div>
+        <div class="video-desc">Scripts pyRevit pour le passage BIM → modèle énergétique (BEM), développés dans le cadre des projets AREP.</div>
+        <div class="video-embed-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/7c0qL3ID55I"
+            title="BIM TO BEM — démonstration pyRevit"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </div>
-      </div>
-
-      <div class="video-card">
-        <div class="video-label">Plugin · pyRevit</div>
-        <div class="video-title">Synchronisation des Gabarits Revit</div>
-        <div class="video-desc">Personnalisation et mise à jour automatique des gabarits de projets à l'échelle du bureau d'études.</div>
-        <div class="video-placeholder">
-          <div class="play-circle"></div>
-          <span class="video-soon">Démo · Bientôt disponible</span>
-        </div>
+        <a href="https://www.youtube.com/watch?v=7c0qL3ID55I" class="video-youtube-link" target="_blank" rel="noopener noreferrer">Ouvrir sur YouTube →</a>
       </div>
 
       <div class="video-card">
         <div class="video-label">Workflow · BIM 4D</div>
-        <div class="video-title">Simulation de Phasage Chantier 4D</div>
-        <div class="video-desc">Coordination et simulation 4D du phasage chantier, planning intégré dans la maquette Navisworks.</div>
-        <div class="video-placeholder">
-          <div class="play-circle"></div>
-          <span class="video-soon">Démo · Bientôt disponible</span>
+        <div class="video-title">Simulation de phasage chantier 4D</div>
+        <div class="video-desc">Coordination et simulation 4D : planning intégré à la maquette (Navisworks / flux BIM).</div>
+        <div class="video-embed-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/kudJl_HmydY"
+            title="Simulation de phasage chantier 4D — démonstration"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </div>
+        <a href="https://youtu.be/kudJl_HmydY" class="video-youtube-link" target="_blank" rel="noopener noreferrer">Ouvrir sur YouTube →</a>
       </div>
 
     </div>
@@ -1164,6 +1222,11 @@ section{position:relative;z-index:1;}
         <div class="edu-year">2020</div>
         <div class="edu-degree">Licence en Architecture</div>
         <div class="edu-school">Institut d'Architecture et d'Urbanisme de Blida · Algérie</div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-year">2015</div>
+        <div class="edu-degree">Baccalauréat Scientifique</div>
+        <div class="edu-school">Lycée Krim Belkacem · Bouira, Algérie</div>
       </div>
     </div>
   </div>
@@ -1236,7 +1299,14 @@ section{position:relative;z-index:1;}
         </a>
       </div>
     </div>
-    <div class="contact-actions">
+    <div class="contact-side">
+      <div class="contact-qr-block">
+        <p class="contact-qr-label">QR · Démos vidéo</p>
+        <img id="portfolio-qr" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="QR code — portfolio et démos BIM (Ask Yasmine, BIM TO BEM, 4D)" width="180" height="180" decoding="async"/>
+        <p class="contact-qr-hint" id="portfolio-qr-hint"></p>
+        <a id="portfolio-qr-link" class="contact-qr-url" href="#videos"></a>
+      </div>
+      <div class="contact-actions">
       <a href="mailto:aitsaadiyasmine1@gmail.com" class="contact-link">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
           <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
@@ -1255,9 +1325,10 @@ section{position:relative;z-index:1;}
         </svg>
         Massy, Île-de-France
       </span>
+      </div>
     </div>
   </div>
-  <div class="footer-bar">© 2025 Yasmine Ait Saadi · BIM Manager & pyRevit Developer · Tous droits réservés</div>
+  <div class="footer-bar">© 2026 Yasmine Ait Saadi · BIM Manager & pyRevit Developer · Tous droits réservés</div>
 </section>
 
 <!-- ─── SCRIPTS ───────────────────────────────────────── -->
@@ -1329,6 +1400,41 @@ const obs2=new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs2.unobserve(e.target);}});
 },{threshold:.1,rootMargin:'0px 0px -30px 0px'});
 document.querySelectorAll('.tl-item,.skill-card,.video-card,.edu-card').forEach(el=>obs2.observe(el));
+
+/* QR code → URL publique + ancre #videos (pour CV imprimé : même lien que ci-dessous) */
+(function initPortfolioQr(){
+  const meta = document.querySelector('meta[name="portfolio-url"]');
+  let base = (meta && meta.getAttribute('content') || '').trim();
+  if (!base && (location.protocol === 'http:' || location.protocol === 'https:')) {
+    let path = location.pathname;
+    if (/index\.html?$/i.test(path)) path = path.replace(/index\.html?$/i, '');
+    if (!path.endsWith('/')) path += '/';
+    base = location.origin + path;
+  }
+  const target = base ? base.replace(/\/+$/, '') + '/#videos' : '';
+  const img = document.getElementById('portfolio-qr');
+  const link = document.getElementById('portfolio-qr-link');
+  const hint = document.getElementById('portfolio-qr-hint');
+  if (!img) return;
+  if (target) {
+    img.src = 'https://api.qrserver.com/v1/create-qr-code/?size=200x200&margin=6&color=1a1612&bgcolor=f5f2ee&data=' + encodeURIComponent(target);
+    img.style.display = '';
+    if (link) {
+      link.href = target;
+      link.textContent = target;
+      link.style.display = '';
+    }
+    if (hint) {
+      hint.textContent = 'Ce lien se termine par #videos (démos YouTube). Sur votre CV, évitez #contact — regénérez le QR avec l’URL affichée ci-dessous.';
+    }
+  } else {
+    img.style.display = 'none';
+    if (link) link.style.display = 'none';
+    if (hint) {
+      hint.innerHTML = 'Ouvrez ce site via une adresse <strong>https</strong> (hébergement web), ou renseignez <code>meta name=&quot;portfolio-url&quot;</code> dans le fichier HTML avec votre URL publique. Un lien <code>file://</code> ou OneDrive « fichier » ne convient pas au QR sur CV.';
+    }
+  }
+})();
 </script>
 </body>
 </html>
