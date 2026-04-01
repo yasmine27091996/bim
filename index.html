@@ -39,9 +39,9 @@
   --shadow-lg:0 8px 40px rgba(90,60,20,0.14);
   --r:        4px;
   /* Vert sauge — stats hero */
-  --sage:     #94A68A;
-  --sage-dk:  #829C79;
-  --sage-lt:  rgba(148,166,138,0.22);
+  --sage:     #6B8E6B;
+  --sage-dk:  #5C7C5C;
+  --sage-lt:  rgba(107,142,107,0.22);
 }
 
 /* ─── RESET ──────────────────────────────────────────── */
@@ -811,55 +811,55 @@ section{position:relative;z-index:1;}
       <div class="bim-float" style="position:absolute;top:20px;right:10px;animation:floatA 5s ease-in-out infinite;">
         <svg width="100" height="90" viewBox="0 0 100 90" fill="none">
           <!-- Isometric building -->
-          <polygon points="50,5 95,28 95,72 50,95 5,72 5,28" stroke="rgba(181,115,42,0.4)" stroke-width="1" fill="none"/>
-          <polygon points="50,5 95,28 50,50 5,28" stroke="rgba(181,115,42,0.5)" stroke-width="1" fill="rgba(181,115,42,0.05)"/>
-          <line x1="50" y1="50" x2="50" y2="95" stroke="rgba(181,115,42,0.4)" stroke-width="1"/>
-          <line x1="50" y1="27" x2="50" y2="5" stroke="rgba(181,115,42,0.3)" stroke-width="1" stroke-dasharray="3,2"/>
-          <circle cx="50" cy="5" r="2.5" fill="var(--amber)" opacity="0.7"/>
-          <circle cx="95" cy="28" r="2" fill="var(--amber)" opacity="0.5"/>
-          <circle cx="5" cy="28" r="2" fill="var(--amber)" opacity="0.5"/>
+          <polygon points="50,5 95,28 95,72 50,95 5,72 5,28" stroke="rgba(107,142,107,0.4)" stroke-width="1" fill="none"/>
+          <polygon points="50,5 95,28 50,50 5,28" stroke="rgba(107,142,107,0.5)" stroke-width="1" fill="rgba(107,142,107,0.05)"/>
+          <line x1="50" y1="50" x2="50" y2="95" stroke="rgba(107,142,107,0.4)" stroke-width="1"/>
+          <line x1="50" y1="27" x2="50" y2="5" stroke="rgba(107,142,107,0.3)" stroke-width="1" stroke-dasharray="3,2"/>
+          <circle cx="50" cy="5" r="2.5" fill="var(--sage)" opacity="0.7"/>
+          <circle cx="95" cy="28" r="2" fill="var(--sage)" opacity="0.5"/>
+          <circle cx="5" cy="28" r="2" fill="var(--sage)" opacity="0.5"/>
         </svg>
       </div>
 
       <div class="bim-float" style="position:absolute;top:30px;left:5px;animation:floatB 6s ease-in-out infinite;">
         <svg width="80" height="70" viewBox="0 0 80 70" fill="none">
           <!-- Floor plan -->
-          <rect x="5" y="5" width="70" height="60" stroke="rgba(181,115,42,0.3)" stroke-width="1" fill="none"/>
-          <line x1="5" y1="28" x2="75" y2="28" stroke="rgba(181,115,42,0.25)" stroke-width="0.7"/>
-          <line x1="38" y1="5" x2="38" y2="65" stroke="rgba(181,115,42,0.25)" stroke-width="0.7"/>
-          <rect x="12" y="12" width="18" height="10" stroke="rgba(181,115,42,0.4)" stroke-width="0.8" fill="rgba(181,115,42,0.06)"/>
-          <rect x="45" y="33" width="22" height="14" stroke="rgba(181,115,42,0.4)" stroke-width="0.8" fill="rgba(181,115,42,0.06)"/>
-          <circle cx="5" cy="5" r="2" fill="var(--amber)" opacity="0.6"/>
-          <circle cx="75" cy="5" r="2" fill="var(--amber)" opacity="0.6"/>
-          <circle cx="5" cy="65" r="2" fill="var(--amber)" opacity="0.6"/>
-          <circle cx="75" cy="65" r="2" fill="var(--amber)" opacity="0.6"/>
+          <rect x="5" y="5" width="70" height="60" stroke="rgba(107,142,107,0.3)" stroke-width="1" fill="none"/>
+          <line x1="5" y1="28" x2="75" y2="28" stroke="rgba(107,142,107,0.25)" stroke-width="0.7"/>
+          <line x1="38" y1="5" x2="38" y2="65" stroke="rgba(107,142,107,0.25)" stroke-width="0.7"/>
+          <rect x="12" y="12" width="18" height="10" stroke="rgba(107,142,107,0.4)" stroke-width="0.8" fill="rgba(107,142,107,0.06)"/>
+          <rect x="45" y="33" width="22" height="14" stroke="rgba(107,142,107,0.4)" stroke-width="0.8" fill="rgba(107,142,107,0.06)"/>
+          <circle cx="5" cy="5" r="2" fill="var(--sage)" opacity="0.6"/>
+          <circle cx="75" cy="5" r="2" fill="var(--sage)" opacity="0.6"/>
+          <circle cx="5" cy="65" r="2" fill="var(--sage)" opacity="0.6"/>
+          <circle cx="75" cy="65" r="2" fill="var(--sage)" opacity="0.6"/>
         </svg>
       </div>
 
       <div class="bim-float" style="position:absolute;bottom:40px;right:5px;animation:floatC 4.5s ease-in-out infinite;">
         <svg width="70" height="50" viewBox="0 0 70 50" fill="none">
           <!-- Dimensions / annotation lines -->
-          <line x1="5" y1="25" x2="65" y2="25" stroke="rgba(181,115,42,0.5)" stroke-width="0.8"/>
-          <line x1="5" y1="20" x2="5" y2="30" stroke="rgba(181,115,42,0.5)" stroke-width="0.8"/>
-          <line x1="65" y1="20" x2="65" y2="30" stroke="rgba(181,115,42,0.5)" stroke-width="0.8"/>
-          <text x="28" y="20" font-family="monospace" font-size="7" fill="rgba(181,115,42,0.7)">6.50m</text>
-          <line x1="35" y1="5" x2="35" y2="45" stroke="rgba(181,115,42,0.3)" stroke-width="0.8" stroke-dasharray="3,2"/>
-          <circle cx="35" cy="5" r="2.5" fill="none" stroke="var(--amber)" stroke-width="1" opacity="0.6"/>
-          <circle cx="35" cy="45" r="2.5" fill="none" stroke="var(--amber)" stroke-width="1" opacity="0.6"/>
+          <line x1="5" y1="25" x2="65" y2="25" stroke="rgba(107,142,107,0.5)" stroke-width="0.8"/>
+          <line x1="5" y1="20" x2="5" y2="30" stroke="rgba(107,142,107,0.5)" stroke-width="0.8"/>
+          <line x1="65" y1="20" x2="65" y2="30" stroke="rgba(107,142,107,0.5)" stroke-width="0.8"/>
+          <text x="28" y="20" font-family="monospace" font-size="7" fill="rgba(107,142,107,0.7)">6.50m</text>
+          <line x1="35" y1="5" x2="35" y2="45" stroke="rgba(107,142,107,0.3)" stroke-width="0.8" stroke-dasharray="3,2"/>
+          <circle cx="35" cy="5" r="2.5" fill="none" stroke="var(--sage)" stroke-width="1" opacity="0.6"/>
+          <circle cx="35" cy="45" r="2.5" fill="none" stroke="var(--sage)" stroke-width="1" opacity="0.6"/>
         </svg>
       </div>
 
       <div class="bim-float" style="position:absolute;bottom:10px;left:10px;animation:floatD 7s ease-in-out infinite;">
         <svg width="60" height="55" viewBox="0 0 60 55" fill="none">
           <!-- 3D cube wireframe -->
-          <rect x="15" y="20" width="30" height="25" stroke="rgba(181,115,42,0.4)" stroke-width="1" fill="none"/>
-          <rect x="25" y="10" width="30" height="25" stroke="rgba(181,115,42,0.3)" stroke-width="1" fill="none"/>
-          <line x1="15" y1="20" x2="25" y2="10" stroke="rgba(181,115,42,0.35)" stroke-width="1"/>
-          <line x1="45" y1="20" x2="55" y2="10" stroke="rgba(181,115,42,0.35)" stroke-width="1"/>
-          <line x1="15" y1="45" x2="25" y2="35" stroke="rgba(181,115,42,0.35)" stroke-width="1"/>
-          <line x1="45" y1="45" x2="55" y2="35" stroke="rgba(181,115,42,0.35)" stroke-width="1"/>
-          <circle cx="15" cy="20" r="1.5" fill="var(--amber)" opacity="0.7"/>
-          <circle cx="55" cy="10" r="1.5" fill="var(--amber)" opacity="0.7"/>
+          <rect x="15" y="20" width="30" height="25" stroke="rgba(107,142,107,0.4)" stroke-width="1" fill="none"/>
+          <rect x="25" y="10" width="30" height="25" stroke="rgba(107,142,107,0.3)" stroke-width="1" fill="none"/>
+          <line x1="15" y1="20" x2="25" y2="10" stroke="rgba(107,142,107,0.35)" stroke-width="1"/>
+          <line x1="45" y1="20" x2="55" y2="10" stroke="rgba(107,142,107,0.35)" stroke-width="1"/>
+          <line x1="15" y1="45" x2="25" y2="35" stroke="rgba(107,142,107,0.35)" stroke-width="1"/>
+          <line x1="45" y1="45" x2="55" y2="35" stroke="rgba(107,142,107,0.35)" stroke-width="1"/>
+          <circle cx="15" cy="20" r="1.5" fill="var(--sage)" opacity="0.7"/>
+          <circle cx="55" cy="10" r="1.5" fill="var(--sage)" opacity="0.7"/>
         </svg>
       </div>
 
@@ -876,7 +876,7 @@ section{position:relative;z-index:1;}
           </defs>
 
           <!-- Shadow under character -->
-          <ellipse cx="130" cy="412" rx="65" ry="8" fill="rgba(181,115,42,0.1)"/>
+          <ellipse cx="130" cy="412" rx="65" ry="8" fill="rgba(107,142,107,0.1)"/>
 
           <!-- LEGS (pants - dark slate) -->
           <path d="M95 295 Q88 340 82 390 Q86 394 96 394 Q102 370 108 320 Z" fill="#2d3748"/>
@@ -897,17 +897,17 @@ section{position:relative;z-index:1;}
           <rect x="93" y="253" width="74" height="44" rx="2" fill="#1a202c"/>
           <!-- BIM wireframe on screen -->
           <!-- Grid lines on screen -->
-          <line x1="93" y1="262" x2="167" y2="262" stroke="rgba(181,115,42,0.3)" stroke-width="0.6"/>
-          <line x1="93" y1="271" x2="167" y2="271" stroke="rgba(181,115,42,0.3)" stroke-width="0.6"/>
-          <line x1="93" y1="280" x2="167" y2="280" stroke="rgba(181,115,42,0.3)" stroke-width="0.6"/>
-          <line x1="93" y1="289" x2="167" y2="289" stroke="rgba(181,115,42,0.3)" stroke-width="0.6"/>
-          <line x1="106" y1="253" x2="106" y2="297" stroke="rgba(181,115,42,0.3)" stroke-width="0.6"/>
-          <line x1="119" y1="253" x2="119" y2="297" stroke="rgba(181,115,42,0.3)" stroke-width="0.6"/>
-          <line x1="132" y1="253" x2="132" y2="297" stroke="rgba(181,115,42,0.3)" stroke-width="0.6"/>
-          <line x1="145" y1="253" x2="145" y2="297" stroke="rgba(181,115,42,0.3)" stroke-width="0.6"/>
-          <line x1="158" y1="253" x2="158" y2="297" stroke="rgba(181,115,42,0.3)" stroke-width="0.6"/>
+          <line x1="93" y1="262" x2="167" y2="262" stroke="rgba(107,142,107,0.3)" stroke-width="0.6"/>
+          <line x1="93" y1="271" x2="167" y2="271" stroke="rgba(107,142,107,0.3)" stroke-width="0.6"/>
+          <line x1="93" y1="280" x2="167" y2="280" stroke="rgba(107,142,107,0.3)" stroke-width="0.6"/>
+          <line x1="93" y1="289" x2="167" y2="289" stroke="rgba(107,142,107,0.3)" stroke-width="0.6"/>
+          <line x1="106" y1="253" x2="106" y2="297" stroke="rgba(107,142,107,0.3)" stroke-width="0.6"/>
+          <line x1="119" y1="253" x2="119" y2="297" stroke="rgba(107,142,107,0.3)" stroke-width="0.6"/>
+          <line x1="132" y1="253" x2="132" y2="297" stroke="rgba(107,142,107,0.3)" stroke-width="0.6"/>
+          <line x1="145" y1="253" x2="145" y2="297" stroke="rgba(107,142,107,0.3)" stroke-width="0.6"/>
+          <line x1="158" y1="253" x2="158" y2="297" stroke="rgba(107,142,107,0.3)" stroke-width="0.6"/>
           <!-- Building on screen -->
-          <polygon points="130,257 150,265 150,293 110,293 110,265" stroke="rgba(200,160,70,0.8)" stroke-width="1" fill="rgba(181,115,42,0.1)"/>
+          <polygon points="130,257 150,265 150,293 110,293 110,265" stroke="rgba(107,142,107,0.85)" stroke-width="1" fill="rgba(107,142,107,0.12)"/>
           <line x1="130" y1="257" x2="130" y2="293" stroke="rgba(200,160,70,0.5)" stroke-width="0.7"/>
           <!-- Screen glow -->
           <rect x="93" y="253" width="74" height="44" rx="2" fill="url(#screenGlow)" opacity="0.3"/>
@@ -967,23 +967,23 @@ section{position:relative;z-index:1;}
           <circle cx="74" cy="110" r="3" fill="#c8923a" opacity="0.9"/>
 
           <!-- Floating code/bim particles around character -->
-          <circle cx="55" cy="180" r="2" fill="var(--amber)" opacity="0.4">
+          <circle cx="55" cy="180" r="2" fill="var(--sage)" opacity="0.4">
             <animate attributeName="opacity" values="0.4;0.9;0.4" dur="2s" repeatCount="indefinite"/>
           </circle>
-          <circle cx="205" cy="195" r="1.5" fill="var(--amber)" opacity="0.5">
+          <circle cx="205" cy="195" r="1.5" fill="var(--sage)" opacity="0.5">
             <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite"/>
           </circle>
-          <circle cx="45" cy="250" r="1.5" fill="var(--amber)" opacity="0.3">
+          <circle cx="45" cy="250" r="1.5" fill="var(--sage)" opacity="0.3">
             <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
           </circle>
-          <circle cx="218" cy="270" r="2" fill="var(--amber)" opacity="0.4">
+          <circle cx="218" cy="270" r="2" fill="var(--sage)" opacity="0.4">
             <animate attributeName="opacity" values="0.4;0.9;0.4" dur="1.8s" repeatCount="indefinite"/>
           </circle>
           <!-- Small "{ }" code hint -->
-          <text x="42" y="165" font-family="monospace" font-size="10" fill="rgba(181,115,42,0.45)">{  }</text>
-          <text x="206" y="175" font-family="monospace" font-size="8" fill="rgba(181,115,42,0.35)">.rvt</text>
-          <text x="38" y="310" font-family="monospace" font-size="7" fill="rgba(181,115,42,0.3)">BIM</text>
-          <text x="208" y="320" font-family="monospace" font-size="7" fill="rgba(181,115,42,0.3)">4D</text>
+          <text x="42" y="165" font-family="monospace" font-size="10" fill="rgba(107,142,107,0.45)">{  }</text>
+          <text x="206" y="175" font-family="monospace" font-size="8" fill="rgba(107,142,107,0.35)">.rvt</text>
+          <text x="38" y="310" font-family="monospace" font-size="7" fill="rgba(107,142,107,0.3)">BIM</text>
+          <text x="208" y="320" font-family="monospace" font-size="7" fill="rgba(107,142,107,0.3)">4D</text>
         </svg>
       </div>
 
@@ -1369,17 +1369,17 @@ section{position:relative;z-index:1;}
       const nr=nodes[i+1];
       if(nr&&Math.abs(n.oy-nr.oy)<1){
         cx.beginPath();cx.moveTo(n.x,n.y);cx.lineTo(nr.x,nr.y);
-        cx.strokeStyle=`rgba(181,115,42,${.06+Math.sin(t*1.1+n.ph)*.03})`;
+        cx.strokeStyle=`rgba(107,142,107,${.08+Math.sin(t*1.1+n.ph)*.04})`;
         cx.lineWidth=.6;cx.stroke();
       }
       const nb=nodes[i+cols];
       if(nb){
         cx.beginPath();cx.moveTo(n.x,n.y);cx.lineTo(nb.x,nb.y);
-        cx.strokeStyle=`rgba(181,115,42,${.06+Math.cos(t+n.ph)*.03})`;
+        cx.strokeStyle=`rgba(107,142,107,${.08+Math.cos(t+n.ph)*.04})`;
         cx.lineWidth=.6;cx.stroke();
       }
       cx.beginPath();cx.arc(n.x,n.y,1.1,0,Math.PI*2);
-      cx.fillStyle=`rgba(181,115,42,${.15+Math.sin(t*1.8+n.ph)*.1})`;
+      cx.fillStyle=`rgba(107,142,107,${.22+Math.sin(t*1.8+n.ph)*.1})`;
       cx.fill();
     });
     requestAnimationFrame(frame);
