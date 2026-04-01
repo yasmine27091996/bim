@@ -158,8 +158,9 @@ nav.site-nav{
 
 .hero-tag{
   font-family:'JetBrains Mono',monospace;
-  font-size:0.62rem;letter-spacing:0.28em;
-  color:var(--amber);text-transform:uppercase;
+  font-size:clamp(14px,1.9vw,16px);
+  letter-spacing:0.36em;
+  color:#C9A227;text-transform:uppercase;
   margin-bottom:1.2rem;
 }
 .hero-name{
@@ -705,9 +706,9 @@ section{position:relative;z-index:1;}
     <div class="nav-logo">YAS · BIM</div>
     <ul class="nav-links">
       <li class="hide-sm"><a href="#experience">Expériences</a></li>
-      <li class="hide-sm"><a href="#skills">Compétences</a></li>
       <li class="hide-sm"><a href="#videos">Démos</a></li>
       <li class="hide-sm"><a href="#education">Formation</a></li>
+      <li class="hide-sm"><a href="#skills">Compétences</a></li>
     </ul>
   </div>
   <div class="nav-cta">
@@ -726,7 +727,7 @@ section{position:relative;z-index:1;}
     <div>
       <p class="hero-tag fade-up anim-1">BIM Manager &amp; pyRevit Developer · Île-de-France</p>
       <h1 class="hero-name fade-up anim-2">Yasmine<br><em>Ait Saadi</em></h1>
-      <p class="hero-subtitle fade-up anim-3">// AREP · CESI Nanterre · Architecture &amp; Énergie</p>
+      <p class="hero-subtitle fade-up anim-3">// AREP · BIM &amp; Énergie · Architecture</p>
       <p class="hero-desc fade-up anim-4">
         Architecte de formation et diplômée en efficacité énergétique,
         je suis animée par la volonté de concevoir autrement, apprendre, tester, améliorer…
@@ -776,8 +777,6 @@ section{position:relative;z-index:1;}
     <div class="scroll-line"></div>
   </div>
 </section>
-
-<!-- ─── EXPERIENCE ────────────────────────────────────── -->
 
 <!-- ─── HUMAAANS CHARACTER SECTION ───────────────────── -->
 <section id="character-section" style="background:var(--bg);overflow:hidden;position:relative;z-index:1;">
@@ -1005,6 +1004,7 @@ section{position:relative;z-index:1;}
 }
 </style>
 
+<!-- ─── EXPERIENCE ────────────────────────────────────── -->
 <section id="experience">
   <div class="section-inner">
     <div class="section-header">
@@ -1071,77 +1071,11 @@ section{position:relative;z-index:1;}
   </div>
 </section>
 
-<!-- ─── SKILLS ────────────────────────────────────────── -->
-<section id="skills">
-  <div class="section-inner">
-    <div class="section-header">
-      <span class="section-num">02</span>
-      <h2 class="section-title">Compétences</h2>
-      <div class="section-rule"></div>
-    </div>
-    <div class="skills-grid">
-
-      <div class="skill-card">
-        <div class="skill-icon">🏗️</div>
-        <div class="skill-card-title">BIM & Modélisation</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Revit</span>
-          <span class="skill-tag">Navisworks</span>
-          <span class="skill-tag">BIMcollab</span>
-          <span class="skill-tag">Familles Revit (Expert)</span>
-          <span class="skill-tag">Coordination BIM</span>
-          <span class="skill-tag">Simulation 4D</span>
-          <span class="skill-tag">Audit maquettes</span>
-          <span class="skill-tag">Psets &amp; mapping IFC</span>
-        </div>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-icon">⚡</div>
-        <div class="skill-card-title">Développement & Automatisation</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">pyRevit</span>
-          <span class="skill-tag">Plugin Add-in Revit</span>
-          <span class="skill-tag">Automatisation BIM</span>
-        </div>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-icon">🌿</div>
-        <div class="skill-card-title">Performance Énergétique</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Audits énergétiques</span>
-          <span class="skill-tag">RE 2020</span>
-          <span class="skill-tag">STD / SED</span>
-          <span class="skill-tag">Pléiades</span>
-          <span class="skill-tag">Performance acoustique</span>
-          <span class="skill-tag">Bâtiment durable</span>
-        </div>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-icon">🖥️</div>
-        <div class="skill-card-title">Logiciels & CAO</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Autocad</span>
-          <span class="skill-tag">Sketchup</span>
-          <span class="skill-tag">Lumion</span>
-          <span class="skill-tag">QGIS</span>
-          <span class="skill-tag">Photoshop</span>
-          <span class="skill-tag">Illustrator</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
 <!-- ─── VIDEO DEMOS ───────────────────────────────────── -->
 <section id="videos">
   <div class="section-inner">
     <div class="section-header">
-      <span class="section-num">03</span>
+      <span class="section-num">02</span>
       <h2 class="section-title">Démos BIM · Plugins &amp; 4D</h2>
       <div class="section-rule"></div>
     </div>
@@ -1203,7 +1137,7 @@ section{position:relative;z-index:1;}
 <section id="education">
   <div class="section-inner">
     <div class="section-header">
-      <span class="section-num">04</span>
+      <span class="section-num">03</span>
       <h2 class="section-title">Formation</h2>
       <div class="section-rule"></div>
     </div>
@@ -1233,6 +1167,72 @@ section{position:relative;z-index:1;}
         <div class="edu-degree">Baccalauréat Scientifique</div>
         <div class="edu-school">Lycée Krim Belkacem · Bouira, Algérie</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SKILLS ────────────────────────────────────────── -->
+<section id="skills">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2 class="section-title">Compétences</h2>
+      <div class="section-rule"></div>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <div class="skill-icon">🏗️</div>
+        <div class="skill-card-title">BIM & Modélisation</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Revit</span>
+          <span class="skill-tag">Navisworks</span>
+          <span class="skill-tag">BIMcollab</span>
+          <span class="skill-tag">Familles Revit (Expert)</span>
+          <span class="skill-tag">Coordination BIM</span>
+          <span class="skill-tag">Simulation 4D</span>
+          <span class="skill-tag">Audit maquettes</span>
+          <span class="skill-tag">Psets &amp; mapping IFC</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">⚡</div>
+        <div class="skill-card-title">Développement & Automatisation</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">pyRevit</span>
+          <span class="skill-tag">Plugin Add-in Revit</span>
+          <span class="skill-tag">Automatisation BIM</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">🌿</div>
+        <div class="skill-card-title">Performance Énergétique</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Audits énergétiques</span>
+          <span class="skill-tag">RE 2020</span>
+          <span class="skill-tag">STD / SED</span>
+          <span class="skill-tag">Pléiades</span>
+          <span class="skill-tag">Performance acoustique</span>
+          <span class="skill-tag">Bâtiment durable</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">🖥️</div>
+        <div class="skill-card-title">Logiciels & CAO</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Autocad</span>
+          <span class="skill-tag">Sketchup</span>
+          <span class="skill-tag">Lumion</span>
+          <span class="skill-tag">QGIS</span>
+          <span class="skill-tag">Photoshop</span>
+          <span class="skill-tag">Illustrator</span>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
